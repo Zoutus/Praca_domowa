@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Measurement Details</h1>
+
+<table>
+  <tr>
+    <td>Value: </td>
+    <td>{{ measurement.value }}</td>
+  </tr>
+    <tr>
+    <td>Date: </td>
+    <td>{{ measurement.measured_date }}</td>
+  </tr>
+  <tr>
+    <td>Notes: </td>
+    <td>{{ measurement.notes }}</td>
+  </tr>
+</table>
+{% endblock %}

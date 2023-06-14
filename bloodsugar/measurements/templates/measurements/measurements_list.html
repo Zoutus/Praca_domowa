@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+{% for measurement in measurements %}
+
+<h1>{{ measurement.value }}</h1>
+<h2>{{ measurement.measured_date }}</h2>
+<h3>{{ measurement.notes }}</h3>
+
+{% endfor %}
+{% endblock %}
